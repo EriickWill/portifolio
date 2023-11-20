@@ -1,0 +1,63 @@
+
+.imgCard{
+  position: relative;
+  width: 58rem;
+  height:58rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s ease-in-out;
+  }
+  a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: "Xillian";
+    font-size: 60px;
+    color: var(--font-color-white);
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover img{
+    filter: brightness(50%);
+  }
+  &:hover a{
+    opacity: 1; 
+  }
+}
+@media (max-width:1202px) {
+  .imgCard{
+    width: 48rem;
+    height:48rem;
+  }
+}
+@media (max-width:902px) {
+  .imgCard{
+    width: 43rem;
+    height:43rem;
+  }
+}
+@media (max-width:840px) {
+  .imgCard{
+    width: 90%;
+    height:80vh;
+    img{
+      object-fit: cover;
+    }
+    
+  }
+}
+
+
+
+

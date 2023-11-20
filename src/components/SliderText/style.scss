@@ -1,0 +1,36 @@
+.slider{
+  user-select:none;
+  font-size: 3rem;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  background: var(--font-color-white);
+  border-block: 1px solid var(--font-color-dark);
+  .sliderContent{
+    font-family: "Xillian";
+    font-size: 4rem;
+    color: var(--font-color-dark);
+    width: fit-content;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: move-rtl 20s linear infinite;
+    
+  }
+}
+@keyframes move-rtl{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+
+}
+

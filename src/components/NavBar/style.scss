@@ -1,0 +1,36 @@
+header{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  nav{
+    font-weight: 500;
+    color:var(--font-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    ul{
+      display: flex;
+      list-style: none;
+      height: 100%;
+      gap: 20px;
+      li{
+        a{
+          color:var(--font-color);
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center
+        }
+        
+      }
+    }
+  }
+}

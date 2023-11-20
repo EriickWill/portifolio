@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: Xillian;
+  src: url("../../public/fonts/QUANTU1H.TTF");
+}
+:root {
+  font-size: 62.5%;
+  --font-color-dark:#121212;
+  --bg-color:#F0F0F0;
+  --font-color-white:#F0F0F0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--font-color);
+}
+.container{
+  max-width: 144rem;
+  margin-inline:auto;
+  padding-inline: 2%;
+  width: 100%;
+}
+body {
+  height: 100%;
+}
+.bodyHome{
+  background: #F0F0F0;
+}
+::selection {
+  background-color: #9E90B8;
+  color: white;
+}
+::-webkit-scrollbar {
+  background: var(--bg-color);
+  width: 10px;
+}             
+     
+::-webkit-scrollbar-thumb{
+  width: 10px;
+  background: var(--font-color-dark);
+}     
+    
